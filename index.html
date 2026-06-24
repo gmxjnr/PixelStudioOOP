@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Pixel Studio</h1>
+
+  <div class="toolbar">
+    <button id="penTool" class="tool-button active">Pen</button>
+    <button id="eraserTool" class="tool-button">Gum</button>
+    <input type="color" id="colorPicker" value="#000000" />
+    <button id="clearButton" class="tool-button">Clear</button>
+  </div>
+
+  <canvas id="pixelCanvas"></canvas>
+
+  <!-- Volgorde is belangrijk: classes moeten geladen zijn voordat App ze gebruikt -->
+  <script src="js/Pixel.js"></script>
+  <script src="js/Grid.js"></script>
+  <script src="js/Tool.js"></script>
+  <script src="js/App.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
